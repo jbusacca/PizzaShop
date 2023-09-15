@@ -5,13 +5,12 @@ import java.util.List;
 
 public class Menu {
 
-    public Menu(List<String> pizzaMenu) {
+    private List<Pizza> PizzaMenu = new ArrayList<Pizza>();
+
+    public Menu(List<Pizza> pizzaMenu) {
         PizzaMenu = pizzaMenu;
     }
-
-    private List<String> PizzaMenu = new ArrayList<String>();
-
-    public List<String> getPizzaMenu() {
+    public List<Pizza> getPizzaMenu() {
         return PizzaMenu;
     }
 
